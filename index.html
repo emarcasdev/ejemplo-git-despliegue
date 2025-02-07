@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img class="logo" src="./img/logos/logo.png" alt="Manga Neko" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto navegation">
+                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">TRENDING</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./pages/manga.html">MANGAS</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MERCHANDISING
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./pages/merch.html">FIGURAS</a>
+                            <a class="dropdown-item" href="./pages/manga.html">ROPA</a>
+                            <a class="dropdown-item" href="./pages/manga.html">OTROS</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="end-header">
+                <form class="d-flex">
+                    <input class="form-control me-2 input-search" type="search" placeholder="Search..." aria-label="Search" />
+                    <button class="btn btn-outline-light btn-search-pink" type="submit">
+                        SEARCH
+                    </button>
+                </form>
+                <div class="icons">
+                    <div class="icon">
+                        <img src="./img/iconos/header/user.png" alt="" />
+                    </div>
+                    <div class="icon">
+                        <img src="./img/iconos/header/favorites.png" alt="" />
+                    </div>
+                    <div class="icon">
+                        <img src="./img/iconos/header/shop.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="./img/logos/binevenida.png" alt="" class="img-welcome" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content container-fluid">
+            <h1 class="display-5">
+                Tu Tienda de Mangas, Cómics<br />
+                y Merch Oficial de Anime,<br />
+                Series y Películas
+            </h1>
+            <button class="btn btn-action mt-3">Ver Producto</button>
+        </div>
+    </section>
+
+    <!-- Novedades Section -->
+    <section class="container-fluid my-5 products">
+        <h2 class="section-title">Novedades</h2>
+        <div class="row">
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="product-card">
+                    <img src="./img/products/mangas/one-piece-106.png" class="img-fluid manga-img" alt="Producto" />
+                    <div class="botones">
+                        <button class="btn btn-ficha" type="button">VER FICHA</button>
+                        <button class="btn btn-add" type="button">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="product-card">
+                    <img src="./img/products/mangas/db-super-20.png" class="img-fluid manga-img" alt="Producto" />
+                    <div class="botones">
+                        <button class="btn btn-ficha" type="button">VER FICHA</button>
+                        <button class="btn btn-add" type="button">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="product-card">
+                    <img src="./img/products/mangas/boruto-70.png" class="img-fluid manga-img" alt="Producto" />
+                    <div class="botones">
+                        <button class="btn btn-ficha" type="button">VER FICHA</button>
+                        <button class="btn btn-add" type="button">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="product-card">
+                    <img src="./img/products/mangas/kaiju-n8-14.png" class="img-fluid manga-img" alt="Producto" />
+                    <div class="botones">
+                        <button class="btn btn-ficha" type="button">VER FICHA</button>
+                        <button class="btn btn-add" type="button">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destacado Section -->
+    <section class="container-fluid my-5 products">
+        <h2 class="section-title">Destacados</h2>
+        <div class="row">
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="destacado-card">
+                    <img src="./img/products/merch/hunterxhunter-poster.png" class="img-fluid" alt="Producto" />
+                    <div class="botones">
+                        <button class="btn btn-ficha" type="button">VER FICHA</button>
+                        <button class="btn btn-add" type="button">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="destacado-card">
+                    <img src="./img/products/merch/solo-leveling-figure.png" class="img-fluid" alt="Producto" />
+                    <div class="botones">
+                        <button class="btn btn-ficha" type="button">VER FICHA</button>
+                        <button class="btn btn-add" type="button">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="destacado-card">
+                    <img src="./img/products/merch/jujutsu-surprise.png" class="img-fluid" alt="Producto" />
+                    <div class="botones">
+                        <button class="btn btn-ficha" type="button">VER FICHA</button>
+                        <button class="btn btn-add" type="button">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="destacado-card">
+                    <img src="./img/products/merch/sailor-moon-shirt.png" class="img-fluid" alt="Producto" />
+                    <div class="botones">
+                        <button class="btn btn-ficha" type="button">VER FICHA</button>
+                        <button class="btn btn-add" type="button">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information section -->
+    <section class="information-section">
+        <div class="row justify-content-center align-items-center text-center p-5">
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="information-element">
+                    <img src="./img/iconos/information/secure.png" class="icon-info m-3" alt="Producto" />
+                    <h6>COMPRA SEGURA</h6>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="information-element">
+                    <img src="./img/iconos/information/sending.png" class="icon-info m-3" alt="Producto" />
+                    <h6>ENVÍO GRATIS A PARTIR DE 20€</h6>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="information-element">
+                    <img src="./img/iconos/information/store.png" class="icon-info m-3" alt="Producto" />
+                    <h6>RECOGIDA EN TIENDA GRATIS</h6>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+                <div class="information-element">
+                    <img src="./img/iconos/information/return.png" class="icon-info m-3" alt="Producto" />
+                    <h6>DEVOLUCIONES HASTA 14 DÍAS</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Manga Neko &copy; 2025. Todos los derechos reservados.</p>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybW1VyyiBkc9b2PQ3Qk3Gtfz2xKZgGzY/0hRHGtF9nC8R4OnV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0+6FI5gO3Qkz5SYh8mJw6r6huA2/xS6q3k5+9VfXgRpx0p2D" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
